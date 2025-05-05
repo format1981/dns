@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.header {
+    background-color: #ff9100;
+    color: #ffffff;
+    padding: 15px 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 75px;
+}
+
+.number {
+    text-decoration: none;
+}
+
+[data-title] {
+ position: relative; 
+    cursor: help;
+}
+   [data-title]::after {
+    content: attr(data-title);
+    position: absolute;
+    left: 0; top: 1em;
+    opacity: 0; 
+    transition: 0.2s;
+    pointer-events: none;
+    background: rgb(39, 39, 39);
+    color: #fff;
+    padding: 0.5em;
+    border-radius: 12px;
+    margin-top: 10px;
+    
+}
+   [data-title]:hover::after {
+    opacity: 1;
+}
+
+.start p {
+    margin: 5px;
+}
+
+.two-start {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    background-color: #ff9100;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.catalog {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.catalog:hover {
+    border: 2px solid #ffffff;
+}
+
+.two.start button {
+    padding: 10px 20px;
+    background-color: #ff9100;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.two.start button:hover {
+    background-color: #ff9100;
+}
+
+.two.start form {
+    display: flex;
+    align-items: center;
+}
+
+.two.start input {
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #ff9100;
+    border-radius: 5px;
+}
+
+.zagolovok {
+    text-align: center;
+    max-width: 800px;
+    margin: 32px auto 0;
+}
+
+.zagolovok h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.batvc {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+}
+
+.batvc img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.availability {
+    color: #ff9100;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.full-specifications {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 800px;
+}
+
+.full-specifications div {
+    padding-top: 20px;
+}
+
+.reviews {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 800px; 
+}
+
+.ti {
+    text-indent: 100px;
+    margin-bottom: 10px;
+}
+
+.tii {
+    text-indent: 100px;
+}
+
+.end {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ff9100;
+    color: white;
+    padding: 20px;
+}
+
+.end div {
+    flex: 1;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.end a {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 18px;
+    gap: 500px;
+    font-weight: bold;
+    width: 50px;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+button {
+    transition: background-color 0.1s;
+    border-radius: 6px;
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: Medium;
+    transition: 200ms;
+    font-weight: 599;
+    border: 2px solid #000000;
+}
+
+button:hover {
+    background-color: #ff9100;
+    color: white;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.vidcard {
+    margin-bottom: 15px;
+}
+
+.overall-rating {
+    margin: 20px;
+    margin-left: 95px;
+}
+
+.overall-rating h1 {
+    font-size: 48px;
+    color: #ff9100;
+}
+
+.most-popular-review {
+    margin: 20px 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 200ms;
+}
+
+a:hover {
+    color: #000000;
+}
+
+input {
+    border: 2px solid #000000;
+    width: 500px;
+    height: 50px;
+    color: #000000;
+    outline: none;
+    font-size: 15px;
+}
